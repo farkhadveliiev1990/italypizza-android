@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/product_llt_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"/>
+
+        <EditText
+            android:id="@+id/product_txt_word"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Pesquise Aqui"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/product_btn_cancel"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cancel"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/product_llt_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+    <GridView
+        android:id="@+id/product_list"
+        android:numColumns="1"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_product"
+            android:text="No Product"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/filterButton"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:padding="30dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_filter"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_colorPressed="@color/colorAccent"
+        fab:fab_colorRipple="@color/colorAccent" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/loading_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#80ffffff"
+            android:gravity="center_horizontal"
+            android:text="Loading"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</RelativeLayout>

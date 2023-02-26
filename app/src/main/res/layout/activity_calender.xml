@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/detail_header"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/header_img"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/ar_hdr" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:id="@+id/delivery_header_tv"
+            android:text="Agenda de Entrega"
+            android:textSize="17sp"
+            android:layout_marginRight="30dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:id="@+id/calendar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!--
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:selectedDateVerticalBar="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </CalendarView>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Data de entrega"
+        android:textSize="17sp"
+        android:id="@+id/date_delivery"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:hint="Definir data"
+                android:maxLength="10"
+                android:editable="false"
+                android:drawableRight="@drawable/calendar_icon"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/et_chnge_date"/>
+        </LinearLayout>
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Track your delivery"
+        android:id="@+id/bt_track_delivery"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:numColumns="2"
+                android:divider="#fff"
+                android:dividerHeight="0dp"
+                android:id="@+id/list_calendrProduct"
+                android:layout_below="@+id/linearLayout">
+            </GridView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myoreder_tv_nodelivery"
+                android:text="Nenhuma entrega"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textSize="20sp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

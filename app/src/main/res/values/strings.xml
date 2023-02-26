@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Homem Do Pão</string>
+    <string name="register">Não tem conta?</string>
+    <string name="detail_text">SWEET AND SAVORY ARTISAN BREADS</string>
+    <string name="app_tag">O seu Pão de sempre... na sua porta!</string>
+    <string name="spinnerPrompt">Choose Subscription</string>
+    <string name="demo_text">LOREM IPSUM IS SIMPLY DUMY TEXT OF PRINTING AND TYPESETTING
+        INDUSTRIES.LOREM IPSUM HAS BEEN THE INDUSTRIES DUMMY TEXT EVER SINCE 1500S.WHEN AN UNKNOWN PRINTER TOOK A GALLERY OF TYPE AND SRAMBLED IT TO MAKE A TYPE SPECIMEN BOOK IT HAS SURVIVED NOT ONLY FIVE CENTURIES.BUT ALSO
+        THE LEAP INTO ELECTONIC TYPESETTING.REMAINING ESSENTIALLY UNCHANGED.</string>
+
+    <string-array name="list_option">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>Other</item>
+
+    </string-array>
+</resources>

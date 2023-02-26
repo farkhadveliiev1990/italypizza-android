@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/product_img_history"
+        android:padding="4dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Cross buns"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/product_name"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="00.5"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:id="@+id/prdct_price"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginLeft="1dp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="€"
+            android:gravity="left"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:id="@+id/prdct_qty"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginLeft="15dp"/>
+</LinearLayout>

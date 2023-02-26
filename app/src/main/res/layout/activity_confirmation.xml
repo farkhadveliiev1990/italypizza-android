@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/detail_header"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/header_img"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ar_hdr" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obrigad@"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/tv_main"
+        android:text="Obrigad@ Agradecemos a sua confiança"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_below="@+id/detail_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado : "
+        android:id="@+id/tv_status"
+        android:layout_below="@+id/tv_main"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/paymentStatus"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="17sp"
+        android:textColor="#ccc"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_status"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_paymentId"
+        android:text="Nr Pagamento : "
+        android:textSize="17sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/paymentStatus"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/paymentId"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#ccc"
+        android:layout_below="@+id/tv_paymentId"
+        android:text="1234566466545566332215"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:id="@+id/table_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:layout_alignParentStart="true">
+
+       <!-- <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Amount : "
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+            <TextView
+                android:id="@+id/paymentAmount"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#ccc"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content" />
+        </TableRow>-->
+<!--
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : "
+                android:textSize="17sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/paymentStatus"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#ccc"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Id : "
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/paymentId"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#ccc"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>-->
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_schedule"
+        android:text="AGENDAR ENTREGA"
+        android:layout_below="@+id/table_ll"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

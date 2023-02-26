@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        cardCornerRadius="15dp"
+        app:cardBackgroundColor="#fff"
+        cardElevation="5dp"
+        android:padding="0dp"
+        cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="2dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Dia "
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendr_product_no"
+        android:textSize="17sp"
+        android:text="1"
+        android:layout_marginLeft="2dp"
+        android:padding="2dp"
+        android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendr_date"
+            android:textSize="14sp"
+            android:textColorHighlight="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="27/11/2017"/>
+ <!--       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/img_delivery"
+                android:padding="0dp"
+                android:src="@drawable/icon_deliver"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"/>
+
+        </LinearLayout>-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tap_tv"
+            android:text="Toque para ver ou atualizar"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"/>
+ <!--       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:focusable="false"
+            android:layout_margin="7dp"
+            android:clickable="false"
+           >
+    &lt;!&ndash;    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.16"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="orderId"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/colorAccent"/>&ndash;&gt;
+
+           &lt;!&ndash; <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.16"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendr_order_id"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="hello"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/colorAccent"/>
+&ndash;&gt;
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="false"
+            android:layout_marginLeft="7dp"
+            android:clickable="false"
+            >
+            <TextView
+                android:id="@+id/tap_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1.16"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text=""
+                android:layout_marginLeft="7dp"
+                android:textStyle="italic"
+                android:textColor="#a8a8a8"/>
+
+        </LinearLayout>-->
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

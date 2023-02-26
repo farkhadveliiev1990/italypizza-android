@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/Catgory_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_margin="15dp"
+            android:text="Unfortunately, your Postalcode is not in our service area, we will inform when your postal area comes in our service"
+            android:textColor="@color/colorPrimaryDark" />
+
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:hint="Your Email Id"
+            android:editable="false"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/alert_emailid"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:inputType="textPostalAddress"
+            android:padding="5dp"
+            android:hint="Your Postal Code"
+            android:editable="false"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/alert_postal_code"/>-->
+
+      <!--  <TextView
+            android:id="@+id/Catgory_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_margin="15dp"
+            android:text="We will contact you when the area gets covered by our service"
+            android:textColor="@color/colorPrimaryDark" />-->
+      <!--  <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_sbt"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/bt_small"/>-->
+
+        <TextView
+            android:id="@+id/cancel_Catgory"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="OK"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+</RelativeLayout>

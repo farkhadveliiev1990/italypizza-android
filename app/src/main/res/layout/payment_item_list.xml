@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_payment"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="2dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/payment_cart_breadimg"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="18dp"
+                android:focusable="false"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/payment_cart_breadname"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/delete_basket"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/img_cart_delete"
+                android:layout_marginRight="0dp"
+                />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Preço Unitário"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="00"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:maxLength="7"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/unit_price"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="€"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Montante Liquido"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="00"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:maxLength="7"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/payment_item_price"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="€"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Total"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/payment_cart_amount"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="00"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:maxLength="7"
+                    android:gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/payment_net_amount"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="€"
+                    android:focusable="false"
+                    android:padding="2dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        android:id="@+id/detail_minus_bt"
+                        android:background="@drawable/icon_minus"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_detail_count"
+                        android:text="0"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17dp"
+                        android:layout_gravity="center"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/detail_plus_bt"
+                        android:background="@drawable/icon_plus"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/detail_minus_bt"
+                        android:layout_toStartOf="@+id/detail_minus_bt" />
+
+
+
+                </LinearLayout>
+
+
+                <!-- <EditText
+                     android:layout_width="0dp"
+
+                     android:layout_height="wrap_content"
+                     android:textSize="18dp"
+                     android:hint="00"
+                     android:background="@drawable/border"
+                     android:padding="5dp"
+                     android:gravity="left"
+                     android:layout_marginLeft="10dp"
+                     android:textStyle="bold"
+                     android:textColor="#ccc"
+                     android:id="@+id/et_payment_qty"
+                     />
+ -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

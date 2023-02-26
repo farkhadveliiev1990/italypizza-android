@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context="com.latitude22.homemdopao.CalenderSubscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/detail_header"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/header_img"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/ar_hdr" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:padding="0dp"
+            android:layout_weight="9"
+            android:src="@drawable/logo_login"
+            android:id="@+id/delivery_header_img"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="#f6f6f6"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Dia "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/tv_days"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:padding="2dp"
+            android:text="Entregas"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/Text_header"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subscription_list"
+        android:divider="#fff"
+        android:dividerHeight="0dp">
+    </ListView>
+</LinearLayout>

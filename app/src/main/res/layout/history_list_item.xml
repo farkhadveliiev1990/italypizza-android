@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_item_no"
+        android:text="1"
+        android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nr Encomenda :"
+            android:textColor="@color/color_text_bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:padding="4dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_order_id"
+    android:text="400121"
+    android:textColor="@color/lighttextColor"
+    android:layout_marginLeft="0dp"
+    android:textSize="16sp"
+    android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Continue"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_subsc_status"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscrição :"
+            android:textColor="@color/TextColordark"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly"
+            android:textColor="@color/lighttextColor"
+            android:id="@+id/txt_subsc_name"
+            android:textSize="16sp"
+            android:padding="4dp" />
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custo da Subscrição :"
+            android:textColor="@color/TextColordark"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:textColor="@color/lighttextColor"
+            android:id="@+id/txt_subsc_cost"
+            android:textSize="16sp"
+            android:padding="4dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="€"
+            android:textColor="@color/lighttextColor"
+            android:textSize="16sp"
+            android:padding="4dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nr Entrega :"
+            android:textColor="@color/TextColordark"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:textColor="@color/TextColorlight"
+            android:id="@+id/txt_delivery"
+            android:textSize="16sp"
+            android:padding="4dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de Início :"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="@color/TextColordark"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26/11/2017"
+            android:textColor="@color/TextColorlight"
+            android:id="@+id/txt_start_date"
+            android:textSize="16sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Toque para ver detalhe"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_tap_view"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/layout_payment"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Pagamento Estado :"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="@color/TextColordark"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textColor="@color/red"
+            android:id="@+id/pymnet_status"
+            android:textSize="16sp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#ccc"/>
+
+</LinearLayout>

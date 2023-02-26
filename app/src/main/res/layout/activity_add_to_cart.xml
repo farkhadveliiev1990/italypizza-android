@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/detail_header"
+        android:background="@color/colorPrimary"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/header_img"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/ar_hdr" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/header_layout">
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="0dp"
+            android:text="Your Cart"
+            android:id="@+id/detail_cart_quantity"
+            android:layout_marginRight="0dp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/cart_list"
+            android:divider="#fff"
+            android:dividerHeight="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginBottom="75dp"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/total_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:padding="2dp"
+                android:text="45.20"
+                android:id="@+id/cart_total_amount"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/bt_checkout"
+            android:padding="7dp"
+            android:text="Checkout"
+            android:textSize="17sp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal|bottom" />
+    </LinearLayout>
+
+</RelativeLayout>
